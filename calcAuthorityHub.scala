@@ -72,7 +72,7 @@
       k = k + 1
 
       // Check the convergence criterion
-      continue = (k < 1) && (hub_diff > epsilon) && (auth_diff > epsilon) && (authhub.select("hub").filter($"hub" < 0).count() >= 0) && (authhub.select("auth").filter($"auth" < 0).count() >= 0)
+      continue = (k < 100) && (hub_diff > epsilon) && (auth_diff > epsilon) && (authhub.select("hub").filter($"hub" < 0).count() >= 0) && (authhub.select("auth").filter($"auth" < 0).count() >= 0)
 
     }
     (auth, hub)
