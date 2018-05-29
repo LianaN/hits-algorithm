@@ -1,6 +1,7 @@
 /**
-    * Calculate authorities and hubs using the HITS algorithm
-    *
+    * Calculates authorities and hubs using the HITS algorithm
+    * IMPORTANT: graphDF is a DataFrame that contains two columns "srcId" and "dstId" 
+    * that correspond to source and target nodes of arcs of a graph.
     * @param spark
     * @param graphDF
     * @return
