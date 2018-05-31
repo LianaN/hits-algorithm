@@ -10,6 +10,8 @@
                        graphDF: DataFrame): (DataFrame, DataFrame) = {
 
     println("Calculate authorities and hubs using the HITS algorithm")
+     
+    graphDF.cache()
 
     import spark.sqlContext.implicits._
 
